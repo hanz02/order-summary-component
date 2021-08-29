@@ -50,7 +50,7 @@ body {
 body::before,
 body::after {
   content: "";
-  height: 70px;
+  height: 4.4rem;
 }
 
 html,
@@ -97,7 +97,7 @@ a {
   padding-bottom: 0.5rem;
 }
 
-.card .card__body > h1 {
+.card .card__body h1 {
   font-weight: 900;
   margin: 1rem auto;
   margin-bottom: 2rem;
@@ -126,8 +126,9 @@ a {
   margin-top: 0.4rem;
 }
 
-.card__body .change_plan h4 {
+.card__body h2 {
   font-weight: 900;
+  font-size: 1rem;
   margin: 0;
   color: var(--dark-blue);
   white-space: nowrap;
@@ -141,7 +142,7 @@ a {
 
   background: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.7rem;
 
   cursor: pointer;
   color: var(--desaturated-blue);
