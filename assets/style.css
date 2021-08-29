@@ -93,7 +93,7 @@ a {
   padding-bottom: 0.5rem;
 }
 
-.card .card__body > h2 {
+.card .card__body > h1 {
   font-weight: 900;
   margin: 1rem auto;
   margin-bottom: 2rem;
