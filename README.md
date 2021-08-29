@@ -59,7 +59,10 @@ Use this section to recap over some of your major learnings while working throug
 
 # CSS practice highlights:
 
+```css
+
 /** using pseudo elements for invisible padding top/bottom  */
+
 body::before,
 body::after {
   content: "";
@@ -77,6 +80,8 @@ html {
 body {
   min-height: 100%;
 }
+
+```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
