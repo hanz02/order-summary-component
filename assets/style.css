@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+  font-weight: 500;
+
+  transition: all ease-out 300ms;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+a {
+  color: var(--bright-blue);
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+
+  background-color: var(--pale-blue);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/** using pseudo elements for invisible padding top/bottom  */
+body::before,
+body::after {
+  content: "";
+  height: 70px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.card__body button,
+a {
+  font-size: 0.9rem;
+}
+
+/** CARD (OUTER CONTAINER)  */
+.card {
+  max-width: 450px;
+  width: 90%;
+  overflow: hidden;
+
+  background-color: var(--very-pale-blue);
+  border-radius: 20px;
+
+  box-shadow: 0 15px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+/** HERO BACKGROUND  */
+.card .card__bg {
+  height: 220px;
+  width: 100%;
+
+  display: block;
+  object-fit: cover;
+  object-position: top;
+}
+
+/** ORDER SUMMARY (CARD BODY)*/
+.card .card__body {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  text-align: center;
+  padding: 1rem 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.card .card__body > h2 {
+  font-weight: 900;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
+  color: var(--dark-blue);
+}
+
+.card .card__body p {
+  color: var(--desaturated-blue);
+}
+
+/** CHANGE PLAN DISPLAY*/
+
+.card__body .change_plan {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 3rem auto;
+
+  width: 100%;
+}
+
+.card__body .change_plan * + * {
+  margin-top: 0.4rem;
+}
+
+.card__body .change_plan h4 {
+  font-weight: 900;
+  margin: 0;
+  color: var(--dark-blue);
+  white-space: nowrap;
+}
+
+.card__body button {
+  font-weight: 900;
+  padding: 1rem 0;
+  margin: 0.7rem auto;
+  width: 100%;
+
+  background: none;
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+  color: var(--desaturated-blue);
+}
+
+.card__body button:hover {
+  color: var(--dark-blue);
+}
+
+.card__body button:first-of-type {
+  background: var(--bright-blue);
+  color: white;
+
+  box-shadow: 0 15px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card__body button:first-of-type:hover,
+.card__body .change_plan a:hover {
+  opacity: 0.7;
+}
+
+@media all and (min-width: 375px) {
+  body {
+    background: url("images/pattern-background-desktop.svg") no-repeat center
+        center,
+      hsl(225, 100%, 94%);
+
+    background-position: top;
+    background-size: contain;
+  }
+
+  .card__body .change_plan {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 2.5rem auto;
+    padding: 0 0.7rem;
+
+    width: 100%;
+  }
+
+  .card__body .change_plan .music_icon {
+    margin-right: 1.2rem;
+  }
+
+  .card__body .change_plan > *:first-child {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media all and (min-width: 440px) {
+  .card .card__body {
+    padding: 1.5rem 3rem;
+  }
+}
