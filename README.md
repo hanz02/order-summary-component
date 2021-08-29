@@ -37,7 +37,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-mobile-first-order-summary-page-g-rb2FJQs)
+- Solution URL: [FrontendMentor Solution Site](https://www.frontendmentor.io/solutions/responsive-mobile-first-order-summary-page-g-rb2FJQs)
 - Live Site URL: [Live Site](https://hanz02.github.io/order-summary-component)
 
 ## My process
